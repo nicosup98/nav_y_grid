@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;
+    place-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        place-items: center;
+        place-content: center;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+}
+
+.nav-bar > span {
+    cursor: pointer;
+}
+
